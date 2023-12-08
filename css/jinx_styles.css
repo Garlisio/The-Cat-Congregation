@@ -1,0 +1,260 @@
+#main {
+
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    height: 100vh;
+}
+
+#background {
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -20;
+
+}
+
+#title {
+
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Metal Mania';
+    font-weight: bold;
+    margin-bottom: 15vh;
+
+}
+
+#arrow {
+
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: xx-large;
+    color: black;
+
+}
+
+#entity {
+
+    transition: 1s;
+    z-index: 5000;
+    animation: bounce 0.5s;
+    animation-iteration-count: infinite;
+    margin-left: -20px;
+
+}
+
+#filler {
+
+    height: 250px;
+
+}
+
+#filler2 {
+
+    height: 75px;
+
+}
+
+#gradient {
+
+    background-color: rgb(43, 3, 3);
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 1) -150%, black 100%);
+    height: 100vh;
+
+}
+
+#members {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 164, 179);
+    background-size: cover;
+
+}
+
+#form {
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+    opacity: 85%;
+
+}
+
+#fire {
+
+    z-index: -100;
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+
+}
+
+#name-error {
+
+    color: red;
+    visibility: hidden;
+
+}
+
+#donation-error {
+
+    color: red;
+    visibility: hidden;
+
+}
+
+
+@keyframes bounce {
+
+    0% {
+        transform: translate(0px, -2px);
+    }
+
+    20% {
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        transform: translate(0px, 4px);
+    }
+
+    60% {
+        transform: translate(0px, 8px);
+    }
+
+    80% {
+        transform: translate(0px, 4px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+
+}
+
+#list {
+
+    padding-left: 25vw;
+    padding-right: 25vw;
+    margin-top: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 200px;
+    text-align: center;
+
+}
+
+#submit {
+
+    margin-left: 22vw;
+    margin-top: 25px;
+
+}
+
+#submit:hover {
+
+    animation: bounce 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+#list-title {
+
+    margin-top: -50px;
+    text-align: center;
+    color: black;
+    font-size: 100px;
+}
+
+#member-list {
+
+    list-style-type: none;
+    margin-top: 20px;
+
+}
+
+.form-label {
+
+    color: black;
+
+}
+
+.adopt {
+
+    color: black;
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1400px) {
+
+    #list-title {
+
+        margin-top: 50px;
+        text-align: center;
+        color: black;
+        font-size: 50px;
+    }
+
+    #list{
+
+        margin-top: 25px;
+
+    }
+
+    #filler2 {
+
+        height: 1px;
+
+    }
+
+}
